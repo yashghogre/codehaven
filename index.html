@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <h1 class="cH">CodeHaven</h1>
+    </div>
+    <h2 class="scHeading">Source Code</h3>
+    <div class="mid1">
+        <p>
+            body {<br>
+                background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);<br>
+                height: 100vh;<br>
+                overflow: hidden;<br>
+                display: flex;<br>
+                justify-content: center;<br>
+                align-items: center;<br>
+            }<br><br>
+            a{<br>
+                position: relative;<br>
+                display: flex;<br>
+                justify-content: center;<br>
+                align-items: center;<br>
+                width: 200px;<br>
+                height: 50px;<br>
+                background: #fff;<br>
+                border-radius: 999px;<br><br>
+
+                &:hover {<br>
+                    //box-shadow: 0 0 20px 10px rgba(230, 30, 10, 0.6);<br>
+                    animation: burn 1000ms ease-out forwards;<br><br>
+
+                    &::before {<br>
+                        content: '';<br>
+                        position: absolute;<br>
+                        left: 40px;<br>
+                        width: 100px;<br>
+                        height: 40px;<br>
+                        background: rgba(255, 230, 110, 1);<br>
+                        border-radius: 100%;<br>
+                        animation: flare 1000ms ease-out forwards;<br>
+                    }<br>
+                }<br>
+            }<br>
+        </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
